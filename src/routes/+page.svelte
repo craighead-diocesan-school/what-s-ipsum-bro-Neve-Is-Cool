@@ -52,4 +52,9 @@
     justify-content: space-between;
     width: 400px;
   }
+
+  .text {
+    font-family: "Patrick Hand", cursive;
+    width: 30%;
+  }
 </style>
