@@ -46,6 +46,8 @@
     padding: 25px;
     background: ivory;
     box-shadow: 15px 15px lightblue;
+    transform: scale(1, 1);
+    transition: 0.25s;
   }
 
   .box:hover {
@@ -89,6 +91,8 @@
     mask: var(--mask);
     background: lavender;
     height: 70px;
+    transform: scale(1, 1);
+    transition: 0.5s;
   }
 
   .wave:hover {
