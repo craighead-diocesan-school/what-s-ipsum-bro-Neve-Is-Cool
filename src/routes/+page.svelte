@@ -48,6 +48,11 @@
     box-shadow: 15px 15px lightblue;
   }
 
+  .box:hover {
+    transform: scale(1.1);
+    transition: 0.25s;
+  }
+
   .boxes {
     display: flex;
     flex-wrap: wrap;
@@ -73,17 +78,6 @@
     padding: 5rem 10rem;
   }
 
-  @media screen and (max-width: 600px) {
-    .columns {
-      flex-direction: column;
-      padding: 2rem 3rem;
-    }
-
-    .text {
-      width: 100%;
-    }
-  }
-
   main {
     background: lightblue;
     padding-bottom: 3rem;
@@ -95,5 +89,21 @@
     mask: var(--mask);
     background: lavender;
     height: 70px;
+  }
+
+  .wave:hover {
+    transform: scale(1.1, 1.5);
+    transition: 0.5s;
+  }
+
+  @media screen and (max-width: 600px) {
+    .columns {
+      flex-direction: column;
+      padding: 2rem 3rem;
+    }
+
+    .text {
+      width: 100%;
+    }
   }
 </style>
