@@ -1,8 +1,8 @@
 <main>
   <div class="subheader">
-    <img src="crossbones.png" alt="pirate skull" />
+    <img src="poison.png" alt="pirate skull" />
     <h2>Yar Pirate Ipsum</h2>
-    <img src="crossbones.png" alt="pirate skull" />
+    <img src="poison.png" alt="pirate skull" />
   </div>
 
   <p>Maroon square-rigged rope's end spirits fathom tackle bilge rat careen cackle fruit splice the main brace. Arr to go on account bilge six pounders smartly yo-ho-ho yawl tack boatswain maroon. Barque hogshead coffer Buccaneer loot fire ship Shiver me timbers Blimey salmagundi reef.</p>
@@ -13,7 +13,21 @@
 <style>
   .subheader {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    background-image: url("Black-Flag.png");
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  h2 {
+    font-family: "hyper-scrypt";
+    color: #d9edff;
+    font-size: 375%;
+  }
+
+  img {
+    width: 6%;
+    height: 6%;
   }
 </style>
