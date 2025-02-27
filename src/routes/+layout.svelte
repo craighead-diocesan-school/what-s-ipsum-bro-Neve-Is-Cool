@@ -35,4 +35,9 @@
     font-family: hyper-scrypt;
     src: url("/HyperScrypt-Stencil_web.woff2") format("woff2");
   }
+
+  @font-face {
+    font-family: basteleur;
+    src: url("/Basteleur-Moonlight.woff2") format("woff2");
+  }
 </style>
