@@ -36,15 +36,22 @@
   }
 
   .background:hover {
-    background-color: white;
+    background-color: whitesmoke;
     transition: 0.25s;
+    transform: scale(1.1);
   }
 
   .shipbackground {
     background-image: url("ship.gif");
-    background-position: bottom;
+    background-position: left;
     background-repeat: no-repeat;
     padding-bottom: 11%;
+    transition: 1.5s;
+  }
+
+  .shipbackground:hover {
+    background-position: right;
+    transition: 4s;
   }
   .waves {
     background-image: url("waves.gif");
@@ -56,7 +63,7 @@
     font-family: "hyper-scrypt";
     color: #d9edff;
     font-size: 375%;
-    transition: 1s;
+    transition: 1.5s;
   }
 
   p {
