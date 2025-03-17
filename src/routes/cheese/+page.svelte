@@ -44,11 +44,21 @@
     transform: rotate(-10deg);
   }
 
+  p:hover {
+    color: #f2b329;
+    scale: 1.1;
+    transform: rotate(0deg);
+    background-color: #dc4d3a;
+  }
+
   .text-background {
     background-image: url("Gouda-block-slice.png");
     background-repeat: no-repeat;
     background-position: center;
-    padding: 200px;
+    padding-bottom: 200px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 100px;
   }
   h2 {
     color: #f2b329;
