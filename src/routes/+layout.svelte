@@ -3,7 +3,7 @@
 <style>
   @import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
   @import url("https://fonts.googleapis.com/css2?family=Irish+Grover&family=Manrope:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Salsa&display=swap");
-  @import url("https://fonts.googleapis.com/css2?family=Ingrid+Darling&family=Irish+Grover&family=Manrope:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Salsa&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Ingrid+Darling&family=Lily+Script+One&display=swap");
 
   /* The code below resets the browser's default styles. It's a good idea to include this in your layout component. */
   :global(body) {
