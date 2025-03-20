@@ -7,26 +7,20 @@
 <svelte:window bind:scrollY={y} bind:innerHeight={height} />
 
 <main>
-  <img class="is-rounded" src="c-for-cheese.png" alt="Cheese heading with round cheese for the C" />
-
-  <h2>heese Ipsum</h2>
+  <div class="cheese">
+    <img class="is-rounded" src="c-for-cheese.png" alt="Cheese heading with round cheese for the C" />
+    <h2>heese Ipsum</h2>
+  </div>
 
   <div class="text-background">
     <p>Cheesy grin parmesan taleggio. Brie boursin pecorino cheesy feet taleggio hard cheese roquefort when the cheese comes out everybody's happy. St. agur blue cheese port-salut bocconcini cheesecake rubber cheese mozzarella stilton cheese strings. Bocconcini.</p>
 
     <p>Fromage the big cheese camembert de normandie. Cut the cheese gouda brie the big cheese when the cheese comes out everybody's happy squirty cheese cut the cheese gouda. Boursin cottage cheese cheeseburger camembert de normandie cheese slices goat port-salut danish fontina. Emmental caerphilly cream cheese mozzarella camembert de normandie cheesy feet.</p>
   </div>
-
-  <aside style="transform: rotate({scrollPercentage * 1000}deg);"></aside>
 </main>
-
-<!--I might need these so I'm not deleting them yet.-->
-<!----------transform: translateX(30%);-------------->
-<!----------transform: rotate({scrollPercentage * 1000}deg);-------------->
 
 <style>
   main {
-    height: 2500px;
     background-color: #dc4d3a;
   }
 
@@ -34,6 +28,7 @@
     height: 150px;
     width: 150px;
     border-radius: 50%;
+    margin-left: 5%;
   }
 
   p {
@@ -42,6 +37,7 @@
     margin-left: 20%;
     margin-right: 30%;
     transform: rotate(-10deg);
+    transition: 0.5s;
   }
 
   p:hover {
@@ -49,6 +45,7 @@
     scale: 1.1;
     transform: rotate(0deg);
     background-color: #dc4d3a;
+    transition: 0.5s;
   }
 
   .text-background {
@@ -64,15 +61,10 @@
     color: #f2b329;
     font-family: "Irish Grover", system-ui;
     font-size: 1000%;
-    text-align: center;
   }
 
-  aside {
-    position: fixed;
-    width: 100px;
-    height: 100px;
-    background-image: url("Cheese-squares.jpg");
-    transform: translateX(100%);
-    transform: translateY(100%);
+  .cheese {
+    display: flex;
+    align-items: center;
   }
 </style>

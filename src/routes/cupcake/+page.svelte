@@ -16,6 +16,9 @@
     </div>
     {#if scrollPercentage >= 0.37}
       <div class="explosion" style="top: 10vh;"></div>
+      <img src="splatter-4.webp" alt="Splatter" style="top:2vh; height:70vh;" />
+      <img src="splatter-4.webp" alt="Splatter" style="left:2vh; height:80vh;" />
+      <img src="splatter-4.webp" alt="Splatter" style="bottom:2vh; height:65vh;" />
     {/if}
     {#if scrollPercentage < 0.37}
       <img src="Cupcake-notlit-sparkler.png" alt="Cupcake with sparkler on top" style="left:15vh;" />
