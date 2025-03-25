@@ -1,15 +1,21 @@
 <main>
-  <div class="top">
+  <section class="top">
     <h2>You Probably Haven't Heard of Hipster Ipsum</h2>
 
-    <div class="text">
-      <div class="left-text">
+    <article>
+      <article class="left-text">
         <p>Fingerstache tofu pickled vibecession kitsch lyft blackbird spyplane vegan craft beer keytar banh mi thundercats. Hashtag heirloom vape scenester paleo hexagon. Blackbird spyplane pok pok DIY heirloom scenester food truck kale chips pabst, bitters raw denim artisan waistcoat seitan freegan.</p>
-      </div>
+      </article>
       <p>Put a bird on it vibecession fashion axe YOLO asymmetrical. VHS photo booth listicle fam truffaut subway tile yr cred chicharrones semiotics biodiesel green juice microdosing whatever. Truffaut praxis PBR and B tattooed street art. Prism jean shorts pickled vegan. Vegan praxis cronut kitsch pop-up. Letterpress street art mlkshk marxism.</p>
-    </div>
-  </div>
-  <div class="bottom"></div>
+    </article>
+  </section>
+  <section class="bottom">
+    <img class="hair" src="hipster-hairdo.png" alt="Hipster Hairdo" />
+    <img class="shirt" src="hipster-top.png" alt="Hipster Top" />
+    <img class="jeans" src="hipster-jeans.png" alt="Hipster Jeans" />
+    <img class="left-shoe" src="hipster-leftshoe.png" alt="Hipster Left Shoe" />
+    <img class="right-shoe" src="hipster-rightshoe.png" alt="Hipster Right Shoe" />
+  </section>
 </main>
 
 <style>
@@ -19,6 +25,31 @@
     padding: 5%;
     font-size: 450%;
     text-align: center;
+  }
+
+  .hair {
+    height: 10%;
+    width: 4%;
+  }
+
+  .shirt {
+    height: 16%;
+    width: 8%;
+  }
+
+  .jeans {
+    height: 24%;
+    width: 12%;
+  }
+
+  .left-shoe {
+    height: 5%;
+    width: 5%;
+  }
+
+  .right-shoe {
+    height: 5%;
+    width: 5%;
   }
 
   p {
@@ -33,7 +64,7 @@
     height: 700px;
   }
 
-  .text {
+  article {
     display: flex;
   }
 
@@ -43,6 +74,11 @@
 
   .bottom {
     background-color: #7f353c;
-    height: 200px;
+    height: 700px;
+    background-image: url("mannequin-for-hipster.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
   }
 </style>
