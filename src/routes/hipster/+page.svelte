@@ -1,3 +1,9 @@
+<script>
+  let y
+  let height
+  $: scrollPercentage = y / (6000 - height)
+</script>
+
 <main>
   <section class="top">
     <h2>You Probably Haven't Heard of Hipster Ipsum</h2>
@@ -10,12 +16,14 @@
     </article>
   </section>
   <section class="bottom">
-    <img class="hair" src="hipster-hairdo.png" alt="Hipster Hairdo" />
-    <img class="shirt" src="hipster-top.png" alt="Hipster Top" />
-    <img class="jeans" src="hipster-jeans.png" alt="Hipster Jeans" />
-    <img class="left-shoe" src="hipster-leftshoe.png" alt="Hipster Left Shoe" />
-    <img class="right-shoe" src="hipster-rightshoe.png" alt="Hipster Right Shoe" />
+    {#if scrollPercentage >= 0.1}
+      <img class="hair" src="hipster-hairdo.png" alt="Hipster Hairdo" />
+      <img class="shirt" src="hipster-top.png" alt="Hipster Top" />
+      <img class="jeans" src="hipster-jeans.png" alt="Hipster Jeans" />
+      <img class="shoe-pair" src="Shoes-pair.png" alt="Hipster Shoes" />
+    {/if}
   </section>
+  <section class="extra"></section>
 </main>
 
 <style>
@@ -30,26 +38,26 @@
   .hair {
     height: 10%;
     width: 4%;
+    transform: translateX(1198%);
+    margin-top: 15.8%;
   }
 
   .shirt {
     height: 16%;
     width: 8%;
+    transform: translateX(575%);
   }
 
   .jeans {
-    height: 24%;
+    height: 13.5%;
     width: 12%;
+    transform: translateX(367%);
   }
 
-  .left-shoe {
-    height: 5%;
-    width: 5%;
-  }
-
-  .right-shoe {
-    height: 5%;
-    width: 5%;
+  .shoe-pair {
+    height: 3.6%;
+    width: 6%;
+    transform: translateX(785%);
   }
 
   p {
@@ -80,5 +88,10 @@
     background-position: center;
     display: flex;
     flex-direction: column;
+  }
+
+  .extra {
+    background-color: #7f353c;
+    height: 300px;
   }
 </style>
