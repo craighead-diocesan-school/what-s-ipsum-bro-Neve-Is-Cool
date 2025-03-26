@@ -16,12 +16,10 @@
     </article>
   </section>
   <section class="bottom">
-    {#if scrollPercentage >= 0.1}
-      <img class="hair" src="hipster-hairdo.png" alt="Hipster Hairdo" />
-      <img class="shirt" src="hipster-top.png" alt="Hipster Top" />
-      <img class="jeans" src="hipster-jeans.png" alt="Hipster Jeans" />
-      <img class="shoe-pair" src="Shoes-pair.png" alt="Hipster Shoes" />
-    {/if}
+    <img class="hair" src="hipster-hairdo.png" alt="Hipster Hairdo" />
+    <img class="shirt" src="hipster-top.png" alt="Hipster Top" />
+    <img class="jeans" src="hipster-jeans.png" alt="Hipster Jeans" />
+    <img class="shoe-pair" src="Shoes-pair.png" alt="Hipster Shoes" />
   </section>
   <section class="extra"></section>
 </main>
