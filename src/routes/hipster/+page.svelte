@@ -1,8 +1,10 @@
 <script>
   let y
   let height
-  $: scrollPercentage = y / (6000 - height)
+  $: scrollPercentage = y / (1500 - height)
 </script>
+
+<svelte:window bind:scrollY={y} bind:innerHeight={height} />
 
 <main>
   <section class="top">
@@ -15,11 +17,23 @@
       <p>Put a bird on it vibecession fashion axe YOLO asymmetrical. VHS photo booth listicle fam truffaut subway tile yr cred chicharrones semiotics biodiesel green juice microdosing whatever. Truffaut praxis PBR and B tattooed street art. Prism jean shorts pickled vegan. Vegan praxis cronut kitsch pop-up. Letterpress street art mlkshk marxism.</p>
     </article>
   </section>
+
+  <section class="middle">
+    <h2>Build A Hipster Dude!</h2>
+  </section>
   <section class="bottom">
-    <img class="hair" src="hipster-hairdo.png" alt="Hipster Hairdo" />
-    <img class="shirt" src="hipster-top.png" alt="Hipster Top" />
-    <img class="jeans" src="hipster-jeans.png" alt="Hipster Jeans" />
-    <img class="shoe-pair" src="Shoes-pair.png" alt="Hipster Shoes" />
+    {#if scrollPercentage > 0.8}
+      <img class="hair" src="hipster-hairdo.png" alt="Hipster Hairdo" />
+    {/if}
+    {#if scrollPercentage > 0.95}
+      <img class="shirt" src="hipster-top.png" alt="Hipster Top" />
+    {/if}
+    {#if scrollPercentage > 1.1}
+      <img class="jeans" src="hipster-jeans.png" alt="Hipster Jeans" />
+    {/if}
+    {#if scrollPercentage > 1.2}
+      <img class="shoe-pair" src="Shoes-pair.png" alt="Hipster Shoes" />
+    {/if}
   </section>
   <section class="extra"></section>
 </main>
@@ -70,6 +84,11 @@
     height: 700px;
   }
 
+  .middle {
+    background-color: #7f353c;
+    color: #f8e4c2;
+    height: 200px;
+  }
   article {
     display: flex;
   }
