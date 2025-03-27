@@ -1,4 +1,6 @@
 <script>
+  import { fade } from "svelte/transition"
+
   let y
   let height
   $: scrollPercentage = y / (1500 - height)
@@ -22,17 +24,17 @@
     <h2>Build A Hipster Dude!</h2>
   </section>
   <section class="bottom">
-    {#if scrollPercentage > 0.8}
-      <img class="hair" src="hipster-hairdo.png" alt="Hipster Hairdo" />
+    {#if scrollPercentage > 0.75}
+      <img transition:fade class="hair" src="hipster-hairdo.png" alt="Hipster Hairdo" />
     {/if}
-    {#if scrollPercentage > 0.95}
-      <img class="shirt" src="hipster-top.png" alt="Hipster Top" />
+    {#if scrollPercentage > 0.9}
+      <img transition:fade class="shirt" src="hipster-top.png" alt="Hipster Top" />
     {/if}
-    {#if scrollPercentage > 1.1}
-      <img class="jeans" src="hipster-jeans.png" alt="Hipster Jeans" />
+    {#if scrollPercentage > 1.05}
+      <img transition:fade class="jeans" src="hipster-jeans.png" alt="Hipster Jeans" />
     {/if}
-    {#if scrollPercentage > 1.2}
-      <img class="shoe-pair" src="Shoes-pair.png" alt="Hipster Shoes" />
+    {#if scrollPercentage > 1.15}
+      <img transition:fade class="shoe-pair" src="Shoes-pair.png" alt="Hipster Shoes" />
     {/if}
   </section>
   <section class="extra"></section>
@@ -87,7 +89,7 @@
   .middle {
     background-color: #7f353c;
     color: #f8e4c2;
-    height: 200px;
+    height: 100px;
   }
   article {
     display: flex;
